@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Portfólio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #2a86c4, #0c4a78);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* TÍTULO */
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    color: #333;
+    padding: 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2a86c4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d5f8f;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Meus Sites</h1>
+
+<div class="container">
+
+
+    <div class="card">
+        <h2>Inova Tech</h2>
+        <p>Site institucional de cursos profissionalizantes.</p>
+
+        <a href="paginas/pagina_principal.html" class="btn">
+            Acessar
+        </a>
+    </div>
+
+    
+    <div class="card">
+        <h2>Turismo em Caicó</h2>
+        <p>Projeto de agência de turismo da cidade de Caicó - RN.</p>
+
+        <a href="caiorn.html" class="btn">
+            Acessar
+        </a>
+    </div>
+
+</div>
+
+</body>
+
+</html>

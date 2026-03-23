@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inova Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #0c4a78, #2a86c4);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 120px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+/* MENU */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* TITULO */
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* MAIN */
+main {
+    padding: 40px 20px;
+}
+
+/* SEÇÕES */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+/* VIDEO */
+video {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* MAPA */
+iframe {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* DEPOIMENTOS */
+section p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0c4a78;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <a href="index.html">
+        <img src="../arquivos/logo_nova.png" class="logo" alt="Logo Inova Tech">
+    </a>
+
+    <h1>INOVA TECH</h1>
+
+    <nav>
+        <a href="areadecurso.html">Cursos</a>
+        <a href="secretariavirtual.html">Secretaria</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- APRESENTAÇÃO -->
+    <section>
+        <h2>Apresentação</h2>
+
+        <video width="100%" controls>
+            <source src="../arquivos/apresentacao_inovatech.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section>
+        <h2>Localização</h2>
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63515.16695602039!2d-35.30067961221152!3d-5.756544929300137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3000f905e8f9b%3A0x40d887981a0ce129!2sSenac%20Zona%20Norte!5e0!3m2!1spt-BR!2sbr!4v1773869694741!5m2!1spt-BR!2sbr" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section>
+        <h2>Depoimentos</h2>
+
+        <p>"Melhor curso da minha vida!"</p>
+        <p>"Aprendi muito rápido!"</p>
+        <p>"Professores excelentes!"</p>
+        <p>"Estrutura incrível!"</p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Inova Tech - (84) 99999-9999</p>
+</footer>
+
+</body>
+</html>
