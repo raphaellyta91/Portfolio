@@ -1,37 +1,28 @@
-<style>
 
-* {
+* { 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; 
     color: #333;
-}
-
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #DAA520, #c79a1b);
-    color: white;
     text-align: center;
+}
+
+
+header {
+    background-color: #DAA520;
+    color: white;
     padding: 40px 20px;
-}
-
-header h1 {
-    font-size: 36px;
-}
-
-header p {
-    font-size: 18px;
 }
 
 /* MENU */
 nav {
-    background-color: #333;
-    text-align: center;
+    background: #333;
     padding: 15px;
 }
 
@@ -40,42 +31,97 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+/* LINKS */
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: #ccc;
 }
 
 nav a:hover {
     color: #DAA520;
+    border-bottom: 2px solid #DAA520;
+}
+
+nav a:active {
+    background-color: #DAA520;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* TITULOS */
+:is(h1, h2, h3) {
+    margin-bottom: 15px;
 }
 
 /* SEÇÕES */
 section {
     padding: 40px 20px;
-    text-align: center;
 }
 
+/* SOBRE */
 .sobre {
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* CARDS */
 .cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .card {
     background: white;
     padding: 20px;
     width: 220px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
+    transform: scale(1.05);
+    background: #fff8e1;
+}
+
+/* TEXTO DO CARD */
+.card p {
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.card p:hover {
+    color: #DAA520;
+}
+
+/* AUTOR */
+.card p::after {
+    content: " - Raphaellyta";
+    font-size: 12px;
+    color: #777;
+}
+
+/* BOTÃO */
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #DAA520;
     transform: scale(1.05);
 }
 
@@ -87,28 +133,21 @@ section {
     margin-top: 20px;
 }
 
-/* BOTÃO */
-.btn {
-    background-color: #DAA520;
+/* SELEÇÃO */
+::selection {
+    background: #DAA520;
     color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #b8951a;
 }
 
 /* FOOTER */
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 15px;
     margin-top: 30px;
+    transition: 0.3s;
 }
 
-    </style>
+footer:hover {
+    font-size: 18px;
+}
