@@ -1,6 +1,13 @@
 
-* { 
-    box-sizing: border-box;
+* :root{
+    --variavel1: blue;
+    --variavel2: black;
+}
+
+
+
+{ 
+    box-sizing: border-box, importante;
     margin: 0;
     padding: 0;
 }
